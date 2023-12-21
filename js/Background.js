@@ -29,46 +29,6 @@ import { onWindowResize, resetVector } from './Updaters.js';
 
 
 
-/*
-
-
-	function updateVelocityBirdGroupCohesion(v) {
-
-	let moveX = 0;
-	let moveY = 0;
-	let moveZ = 0;
-	for (let otherVertice of bSystemGeometry.vertices) {
-	if (otherVertice !== v) {
-	if (v.distanceTo(otherVertice) < MINIMUM_DISTANCE) {
-	moveX += v.x - otherVertice.x;
-	moveY += v.y - otherVertice.y;
-	moveZ += v.z - otherVertice.z;
-	}
-	}
-	}
-
-	v.velocity.x += moveX * DISTANCING_FACTOR;
-	v.velocity.y += moveY * DISTANCING_FACTOR;
-	v.velocity.z += moveZ * DISTANCING_FACTOR;
-	}
-
-
-	function updateVelocityBirdVelocityLimit(v) {
-	if (v.velocity.length() > B_MAX_VELOCITY) {
-	v.velocity.normalize().multiplyScalar(B_MAX_VELOCITY);
-	}
-	}
-
-
-	function updateVelocityBirdPositionBoundary(v) {
-	updateVelocityPositionBoundaryOnDimension(v, 'x');
-	updateVelocityPositionBoundaryOnDimension(v, 'y');
-	updateVelocityPositionBoundaryOnDimension(v, 'z');
-
-	}
-	*/
-
-
 
 function animate() {
 		pSystemGeometry.vertices.map( v => {
