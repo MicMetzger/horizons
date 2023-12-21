@@ -285,18 +285,8 @@ function updateHorizonPosition() {
 								checkState();
 						}
 
-						// let theta                = Math.PI * ( horizonConfig.inclination - 1.5 );
-						// let phi                  = 2 * Math.PI * ( horizonConfig.azimuth - 1.5 );
-						// let theta                = Math.PI * (horizonConfig.inclination - 0.5);
-						// let phi                  = 2 * Math.PI * ( horizonConfig.azimuth - 0.5 );
-
-						/* 
-						* accurate
-						*  */
-						// let theta                = Math.PI * ( horizonConfig.inclination - 0.55 ); 
-						// let phi                  = 2 * Math.PI * ( horizonConfig.azimuth - 0.54 );
-						let theta                = Math.PI * ( horizonConfig.inclination - 0.55 ); 
-						let phi                  = 2 * Math.PI * ( horizonConfig.azimuth - 0.50 );
+						let theta                = Math.PI * ( horizonConfig.inclination - 0.5 ); 
+						let phi                  = 2 * Math.PI * ( horizonConfig.azimuth - 0.5 );
 						horizonSphere.position.x = horizonConfig.distance * Math.cos( phi );
 						horizonSphere.position.y = horizonConfig.distance * Math.sin( phi ) * Math.sin( theta );
 						horizonSphere.position.z = horizonConfig.distance * Math.sin( phi ) * Math.cos( theta );
