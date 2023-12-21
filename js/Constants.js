@@ -12,7 +12,7 @@ export const CORE_GET_SONG_NAME = ( number ) => {
 				default:
 						return "none";
 		}
-}
+};
 
 
 export const horizonAscensionTimer = ( song_number ) => {
@@ -27,7 +27,7 @@ export const horizonAscensionTimer = ( song_number ) => {
 						return INFINITY;
 
 		}
-}
+};
 
 
 /** ---------------------------------------------- **/
@@ -59,10 +59,10 @@ const CAMERA_POSITION          = 15;
 const CAMERA_INITIAL_POSITION  = 30;
 // const HORIZON_INITIAL_INCILNATION = 0.56412;
 // const HORIZON_INITIAL_INCILNATION = 0.505;	// Horizon
-// const HORIZON_INITIAL_INCILNATION = 0.59812;
-const HORIZON_INITIAL_INCILNATION = 0.60412;
+const HORIZON_INITIAL_INCILNATION = 0.59812;
+// const HORIZON_INITIAL_INCILNATION = 0.60412;
 const HORIZON_TARGET_INCLINATION  = 0.500;
-const HORIZON_INCLINATION_SPEED   = 0.00001293;
+const HORIZON_INCLINATION_SPEED   = 0.00001093;
 // const HORIZON_INITIAL_INCILNATION = 0.56408;
 // const HORIZON_TARGET_INCLINATION  = 0.500;
 // const HORIZON_INCLINATION_SPEED = 0.00001203;
@@ -78,7 +78,7 @@ export const CORE_STATE = {
 		song_name         : "none",
 		isInitialized     : false,
 		isHorizonAscension: false,
-}
+};
 /** ---------------------------------------------- **/
 
 
